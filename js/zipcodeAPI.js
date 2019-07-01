@@ -1,7 +1,9 @@
 $('#zipcode').keyup(function () {
-    if (this.value.length === 8) {
+    if (this.value.length === 10) {
 
-        const url = `http://viacep.com.br/ws/${this.value}/json/?callback=callback_name`
+        const zipcode = this.value.replace(/\D/g, '');
+
+        const url = `http://viacep.com.br/ws/${zipcode}/json/?callback=callback_name`
 
         $.ajax({
             url: url,

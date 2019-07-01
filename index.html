@@ -16,6 +16,7 @@
     <!-- Scripts -->
     <script defer type="text/javascript" src="./js/validateForm.js"></script>
     <script defer type="text/javascript" src="./js/zipcodeAPI.js"></script>
+    <script defer type="text/javascript" src="./js/mask.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
@@ -50,7 +51,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="zipcode">CEP</label>
-                                <input name="zipcode" class="form-control" id="zipcode" type="text" maxlength="8"
+                                <input name="zipcode" class="form-control" id="zipcode" type="text" maxlength="10"
                                     placeholder="Digite seu CEP">
                                 <small id="zipcode-invalid" class="invalid text-danger">O campo não pode ter
                                     menos que 8 digitos.</small>
